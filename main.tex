@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{nopageno}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{4cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand*{\dateofbirth}[1]{\def\@dateofbirth{#1}}
+
+\AfterPreamble{\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Henrik} % Your first name
+\familyname{Molnes} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Født: 28.05.1985\\Treschowsgate 19\\}{0470 Oslo}
+\phone{452 58 968}
+\email{molnes@gmail.com}
+\extrainfo{\href{http://github.com/hmol}{github.com/hmol}}
+
+
+%\homepage{http://www.henrikm.com}{henrikm.com}  The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\photo[90pt][0pt]{profile_resized_2} %The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%\thispagestyle{empty}
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Arbeidserfaring}
+\cventry{09/2015 – d.d.}{Utvikler}{\textsc{Making Waves}}{Prosjekt: Statens pensjonskasse, \href{http://www.spk.no}{spk.no}}{}{Var med på utvikling av ny lånesøknad for medlemmene til spk. Har også sittet i et devops-team og arbeidet med forvaltning/videreutvikling. Teknologier: Episerver, Solr, Apache Tomcat, ASP.NET MVC, Javascript/React, Powershell, Team City, Octopus Deploy,  Git, MS SQLServer, Windows Server, IIS}
+%------------------------------------------------
+\cventry{08/2015 – 09/2015}{Utvikler}{\textsc{Making Waves}}{Prosjekt: \href{http://www.makingwaves.no}{makingwaves.no}/\href{http://www.makingwaves.com}{.com}/\href{http://www.makingwaves.pl}{.pl}/\href{http://www.makingwaves.se}{.se}}{}{Sammen med to nyansatte jeg hadde opplæring av, utviklet vi de nye nettsidene til Making Waves, basert på Episerver og hostet i skyen (Azure). Teknologier: Episerver, ASP.NET MVC, Javascript, Git, Azure.}
+%------------------------------------------------
+\cventry{03/2014 – 04/2015}{Utvikler}{\textsc{Making Waves}}{Prosjekt: Regjeringen, \href{http://www.regjeringen.no}{regjeringen.no}}{}{Nyutvikling av regjeringen.no. Hadde blant annet ansvar for migrering av gammel innholdsdatabase, implementering av nytt søk, import av regjeringspublikasjoner samt utvikling av flere sidetyper. Teknologier: Episerver, EpiFind/ElasticSearch, ASP.NET MVC, Javascript, Powershell, Team City, Octopus Deploy, Git, MS SQLServer, Windows Server, IIS, Varnish cahce}
+%------------------------------------------------
+\cventry{08/2012 – 05/2014}{Utvikler}{\textsc{Making Waves}}{Prosjekt: Stortinget, intranett}{}{Arbeidet med utvikling av nytt intranett for Stortinget. Utviklet flere sidetyper, integrasjoner mot interne system, ulike skjema og virksomhetssøk. Teknologier: Episerver, IntelliSearch, AD server, ASP.NET, Javascript, Team City, PowerShell, SVN, MS SQLServer, Windows Server, IIS}
+%------------------------------------------------
+\cventry{08/2011 – 06/2012}{IT-support}{\textsc{Høgskolen i Oslo Læringssenteret}}{}{}{Bistå studenter og ansatte med generelle data- og nettverksproblemer.}
+%------------------------------------------------
+\cventry{06/2011 – 08/2011}{Utvikler, summer internship}{\textsc{Kongsberg Defence \& Aerospace}}{}{}{Jobbet med konvertering og analyse av utdatert kode med tanke på nye krav. Teknologier: Linux/RedHat, bash, C, Pascal}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Utdannelse}
+\cventry{2009 – 2012}{Bachelor Informatikk}{Høgskolen i Oslo}{}{}{Flere fag rettet mot blant annet programmering, matematikk, logikk, algoritmer, sikkerhet, nettverk og databaser. Hadde bacheloroppgave for Accenture. Jobbet i samarbeid med Altinn og lagde en Windows Phone app. Karaktersnitt: A-}
+\cventry{2006 – 2009}{Bachelor Historie}{Universitetet i Oslo}{}{}{}{}
+%----------------------------------------------------------------------------------------
+%	Certifications SECTION
+%----------------------------------------------------------------------------------------
+\section{Sertifiseringer}
+\cvitem{2016}{EPiServer Certified Developer}
+\cvitem{2015}{70-486 Developing ASP.NET MVC Web Applications}
+%----------------------------------------------------------------------------------------
+%	Other SECTION
+%----------------------------------------------------------------------------------------
+\section{Annet}
+\cvitem{2012}{Microsoft University}
+\cvitem{2011 – 2012}{NITO (Lokallag ved HiO) Styremedlem}
+
+
+
+%\thispagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Computer skills}
+
+%\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+%\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, %Microsoft Windows}
+%\cvitem{Advanced}{Computer Hardware and Support}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
